@@ -9,6 +9,8 @@ Practical-06/prog6_fifo_client
 Practical-06/signal_handler
 Practical-07/prog7_linuxaddr
 Practical-07/memory_demo
+Practical-08/prog8_dynamicmemory
+Practical-08/cow_demo
 *.o
 *.exe
 *.out

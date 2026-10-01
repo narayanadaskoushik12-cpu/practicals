@@ -24,6 +24,9 @@ This repository contains all official lab practical implementations for Operatin
 ├── Practical-07/
 │   ├── prog7_linuxaddr.c      # Linux Process Address Space Inspection (Text, Data, BSS, Heap, Stack)
 │   └── memory_demo.c          # Memory Mappings Inspection program for /proc/<PID>/maps & pmap
+├── Practical-08/
+│   ├── prog8_dynamicmemory.c # Dynamic Memory Allocation (malloc, calloc, realloc, free) & Valgrind
+│   └── cow_demo.c             # Copy-on-Write (COW) demonstration after fork()
 ├── Makefile                   # Automated build script for all practicals
 └── README.md                  # Comprehensive documentation
 ```
@@ -76,8 +79,12 @@ make
 ```bash
 ./Practical-07/prog7_linuxaddr
 ./Practical-07/memory_demo
+```
 
-# In another terminal, inspect memory mappings:
-cat /proc/<PID>/maps
-pmap <PID>
+#### Practical 8: Dynamic Memory & Copy-on-Write (COW)
+```bash
+./Practical-08/prog8_dynamicmemory
+valgrind --leak-check=full ./Practical-08/prog8_dynamicmemory
+
+./Practical-08/cow_demo
 ```
