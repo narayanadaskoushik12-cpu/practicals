@@ -4,6 +4,9 @@ Practical-03/prog3
 Practical-04/prog4
 Practical-05/prog5
 Practical-05/lsgrep
+Practical-06/prog6_fifo_server
+Practical-06/prog6_fifo_client
+Practical-06/signal_handler
 *.o
 *.exe
 *.out
