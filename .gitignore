@@ -7,6 +7,8 @@ Practical-05/lsgrep
 Practical-06/prog6_fifo_server
 Practical-06/prog6_fifo_client
 Practical-06/signal_handler
+Practical-07/prog7_linuxaddr
+Practical-07/memory_demo
 *.o
 *.exe
 *.out

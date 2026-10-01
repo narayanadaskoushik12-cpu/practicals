@@ -21,6 +21,9 @@ This repository contains all official lab practical implementations for Operatin
 │   ├── prog6_fifo_server.c    # Client-Server Application Server using Named Pipes (FIFOs)
 │   ├── prog6_fifo_client.c    # Client-Server Application Client using Named Pipes (FIFOs)
 │   └── signal_handler.c       # POSIX Signal Handling using sigaction() (SIGINT, SIGTERM, SIGUSR1)
+├── Practical-07/
+│   ├── prog7_linuxaddr.c      # Linux Process Address Space Inspection (Text, Data, BSS, Heap, Stack)
+│   └── memory_demo.c          # Memory Mappings Inspection program for /proc/<PID>/maps & pmap
 ├── Makefile                   # Automated build script for all practicals
 └── README.md                  # Comprehensive documentation
 ```
@@ -64,12 +67,17 @@ make
 
 #### Practical 6: Named Pipes (FIFOs) & POSIX Signals
 ```bash
-# Terminal 1: Run Server
 ./Practical-06/prog6_fifo_server
-
-# Terminal 2: Run Client
 ./Practical-06/prog6_fifo_client
-
-# Run POSIX Signal Handler:
 ./Practical-06/signal_handler
+```
+
+#### Practical 7: Linux Process Address Space Analysis
+```bash
+./Practical-07/prog7_linuxaddr
+./Practical-07/memory_demo
+
+# In another terminal, inspect memory mappings:
+cat /proc/<PID>/maps
+pmap <PID>
 ```

@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -g
 
-all: p1 p2 p3 p4 p5_prog5 p5_lsgrep p6_server p6_client p6_signal
+all: p1 p2 p3 p4 p5_prog5 p5_lsgrep p6_server p6_client p6_signal p7_linuxaddr p7_demo
 
 p1: Practical-01/prog1.c
 	$(CC) $(CFLAGS) Practical-01/prog1.c -o Practical-01/prog1
@@ -30,5 +30,11 @@ p6_client: Practical-06/prog6_fifo_client.c
 p6_signal: Practical-06/signal_handler.c
 	$(CC) $(CFLAGS) Practical-06/signal_handler.c -o Practical-06/signal_handler
 
+p7_linuxaddr: Practical-07/prog7_linuxaddr.c
+	$(CC) $(CFLAGS) Practical-07/prog7_linuxaddr.c -o Practical-07/prog7_linuxaddr
+
+p7_demo: Practical-07/memory_demo.c
+	$(CC) $(CFLAGS) Practical-07/memory_demo.c -o Practical-07/memory_demo
+
 clean:
-	rm -f Practical-01/prog1 Practical-02/prog2 Practical-03/prog3 Practical-04/prog4 Practical-05/prog5 Practical-05/lsgrep Practical-06/prog6_fifo_server Practical-06/prog6_fifo_client Practical-06/signal_handler
+	rm -f Practical-01/prog1 Practical-02/prog2 Practical-03/prog3 Practical-04/prog4 Practical-05/prog5 Practical-05/lsgrep Practical-06/prog6_fifo_server Practical-06/prog6_fifo_client Practical-06/signal_handler Practical-07/prog7_linuxaddr Practical-07/memory_demo
